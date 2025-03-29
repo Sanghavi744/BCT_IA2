@@ -1,0 +1,49 @@
+Decentralized Marketplace for Digital Assets
+This project is a blockchain-based marketplace where artists and creators can sell digital assets directly to buyers. It ensures that creators receive royalties on resales and keeps a transparent record of all transactions.
+
+A. Features
+1. Artists can list digital assets such as music, e-books, and design files.
+2. Buyers can purchase assets directly without middlemen.
+3. Smart contracts handle royalty payments on resales.
+4. All transactions are recorded on the blockchain for transparency.
+
+B. Setup Instructions
+1. Install Requirements
+  a. Use Remix IDE for writing and deploying the smart contract.
+2. Deploying the Smart Contract
+  a. Open Remix IDE.
+3. Create a new file and name it DecentralizedMarketplace.sol.
+  a. Copy and paste the smart contract code.
+4. Compile the contract using Solidity version 0.8.24.
+5. Go to the Deploy & Run Transactions tab.
+6. Select Injected Provider- Remix IDE(Cancun).
+7. Click Deploy and confirm the transaction in Metamask.
+
+C. Operations Performed
+1. Adding an Asset
+   a. Open Remix IDE and find the deployed contract.
+   b. Call the addAsset function.
+   c. Enter the required details:
+     - Name of the asset (e.g., "Digital Art")
+     - Price in Wei (e.g., 1 ETH = 1000000000000000000 Wei)
+     - Type of asset (e.g., Music, Ebooks, Design Files)
+     - Royalty percentage (e.g., 5%)
+     - Click Transact and confirm the transaction in Metamask.
+
+2. Buying an Asset
+a. Find the asset details by calling getAssetDetails with the asset index.
+b. Note the price and set the correct amount in Value before buying.
+c. Call buyAsset and confirm the transaction in Metamask.
+
+3. Testing Checklist
+a. The contract is deployed successfully.
+b. An asset is added using addAsset.
+c. Asset details are checked using getAssetDetails.
+d. The asset is purchased using buyAsset (with the correct amount of ETH).
+e. Ownership is successfully transferred.
+
+D. Important Notes
+1. Make sure to send enough ETH when buying an asset.
+2. Once sold, an asset cannot be bought again.
+3. Royalties are automatically deducted and paid to the original creator.
+4. This guide provides step-by-step instructions to deploy and use the contract easily. Let me know if you need further clarification.
